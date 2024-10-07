@@ -73,3 +73,14 @@ function calculateEmployeeSalary(employee) {
 
     return total;
 }
+
+function calculateCompanySalary(company) {
+    let totalCompanySalary = 0;
+
+    // Iterate over each department in the company
+    company.departments.forEach(department => {
+        totalCompanySalary += calculateDepartmentSalary(department);
+    });
+
+    return totalCompanySalary;
+}
