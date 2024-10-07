@@ -84,3 +84,8 @@ function calculateCompanySalary(company) {
 
     return totalCompanySalary;
 }
+
+// Example output
+console.log("Total salary for Engineering Department: ", calculateDepartmentSalary(company.departments[0])); // Engineering
+console.log("Total salary for Sales Department: ", calculateDepartmentSalary(company.departments[1])); // Sales
+console.log("Total salary for the entire company: ", calculateCompanySalary(company));
